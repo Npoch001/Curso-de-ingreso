@@ -1,0 +1,18 @@
+{
+	var num = Math.floor(Math.random()*10+1)
+	
+		if (num > 8) {
+
+			alert(num + " EXCELENTE");
+			
+		} else if (num > 3 ) {
+
+			alert(num +" Aprobado");
+			
+		} else {
+
+			alert(num + " Vamos, la proxima se puede");
+			
+		}
+
+}
