@@ -1,0 +1,17 @@
+{
+
+	var numero = parseInt(prompt("ingrese un número entre 0 y 10."));
+
+	while (numero < 0 || numero > 10){
+
+		alert("Numero incorrecto");
+
+		numero = parseInt(prompt("ingrese otro numero"));
+
+
+	}
+
+		document.getElementById("Numero").value=numero;
+
+
+}
