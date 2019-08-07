@@ -9,9 +9,10 @@ function mostrar() {
     var pesoMarcaMasPesada;
     var flag = 0;
     var cantidadceros = 0;
-    var totalpeso;
+    var totalpeso = 0;
     var contador = 0;
     var promedio;
+    var pesomin;
     
     do {
 
@@ -42,6 +43,13 @@ function mostrar() {
 
             pesoMarcaMasPesada = peso;
             marcaMasPesada = marca;
+        
+        }
+
+        if ( peso < pesomin || flag ==0 ){
+
+            pesomin = peso;
+
             flag = 1;
         }
 
@@ -65,6 +73,9 @@ function mostrar() {
     document.write("La cantidad de temperaturas pares es " + cantidadpares + "<br>");
     document.write("La marca mas pesada es " + marcaMasPesada + " y pesa "  + pesoMarcaMasPesada + "<br>");
     document.write("La cantidad de temperaturas iguales a 0 es " + cantidadceros + "<br>");
+    document.write("El promedio de los pesos es " + promedio + "<br>");
+    document.write("La peso maximos es " + pesoMarcaMasPesada + "<br>");
+    document.write("La peso minimo es " + pesomin + "<br>");
     
 
     
